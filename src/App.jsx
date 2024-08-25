@@ -6,7 +6,9 @@ function App() {
     <>
       <FormComponent />
       <h2>API Link:</h2>
-      <a href="http://13.235.132.143:3000/bfhl">Deployed on AWS</a>
+      <a href="https://pewegetqyt.ap-south-1.awsapprunner.com/bfhl">
+        Deployed on AWS
+      </a>
     </>
   );
 }
