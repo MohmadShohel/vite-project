@@ -33,6 +33,13 @@ function FilterableMultiSelectDropdown({ data }) {
     if (updatedSelectedItems.includes("Lowercase Alphabet")) {
       newFilteredData.push(...data.lowercase_alphabet);
     }
+    if (updatedSelectedItems.includes("Higest lowercase Alphabet")) {
+      // Find the highest lowercase alphabet
+      const highestLowercase = Math.max(
+        ...data.lowercase_alphabet.map((char) => char.charCodeAt(0))
+      );
+      newFilteredData.push(String.fromCharCode(highestLowercase));
+    }
 
     setFilteredData(newFilteredData);
   };
